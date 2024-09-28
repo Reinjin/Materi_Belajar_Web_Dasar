@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID AREA </title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns:  100px  auto  100px ;
+            grid-template-rows:  50px  auto 100px ;  
+            grid-template-areas: 
+                "header header header"
+                ". content ."
+                "footer footer footer";  
+        }
+
+        .content {
+            background-color: aqua;
+            grid-area: content;
+        }
+
+        .header {
+            background-color: bisque;
+            grid-area: header;
+            
+        }
+
+        .footer {
+            background-color: bisque;
+            grid-area: footer;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat Datang di Website Kami
+        </div>
+
+        <div class="content">
+            <h1>Programmer Pemula</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam tempore voluptate quae porro veritatis, minus assumenda doloribus earum fuga architecto accusamus rem soluta? Officiis, veritatis quaerat nam eveniet aut numquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veniam eligendi accusamus error! Unde repellendus impedit nulla eum incidunt rem aut quaerat, repudiandae commodi, necessitatibus, quae pariatur odio aliquam neque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veniam eligendi accusamus error! Unde repellendus impedit nulla eum incidunt rem aut quaerat, repudiandae commodi, necessitatibus, quae pariatur odio aliquam neque!</p>
+        </div>
+
+        <div class="footer">
+            &copy; 2021 Programmer Pemula
+        </div>
+       
+    </div>
+    
+</body>
+</html>

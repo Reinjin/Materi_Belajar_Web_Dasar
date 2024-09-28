@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID </title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: [cline1] 100px [cline2] auto [cline3] 100px [cline4];
+            grid-template-rows: [rline1] 50px [rline2] auto [rline3] 100px [rline4];    
+        }
+
+        .content {
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .header {
+            background-color: bisque;
+            grid-column-start: cline1;
+            grid-column-end: cline4;
+            grid-row-start: rline1;
+            grid-row-end: rline2;
+        }
+
+        .footer {
+            background-color: bisque;
+            grid-column-start: cline1;
+            grid-column-end: cline4;
+            grid-row-start: rline3;
+            grid-row-end: rline4;
+        }
+
+        .content {
+            grid-column-start: cline2;
+            grid-column-end: cline3;
+            grid-row-start: rline2;
+            grid-row-end: rline3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat Datang di Website Kami
+        </div>
+
+        <div class="content">
+            <h1>Programmer Pemula</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam tempore voluptate quae porro veritatis, minus assumenda doloribus earum fuga architecto accusamus rem soluta? Officiis, veritatis quaerat nam eveniet aut numquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veniam eligendi accusamus error! Unde repellendus impedit nulla eum incidunt rem aut quaerat, repudiandae commodi, necessitatibus, quae pariatur odio aliquam neque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veniam eligendi accusamus error! Unde repellendus impedit nulla eum incidunt rem aut quaerat, repudiandae commodi, necessitatibus, quae pariatur odio aliquam neque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos veniam eligendi accusamus error! Unde repellendus impedit nulla eum incidunt rem aut quaerat, repudiandae commodi, necessitatibus, quae pariatur odio aliquam neque!</p>
+        </div>
+
+        <div class="footer">
+            &copy; 2021 Programmer Pemula
+        </div>
+       
+    </div>
+    
+</body>
+</html>

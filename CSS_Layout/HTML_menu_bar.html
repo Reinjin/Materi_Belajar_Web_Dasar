@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manu Bar</title>
+
+    <style>
+        .menubar{
+            display: inline-block;
+        }
+
+        .menu{
+            background-color: aqua;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menulist{
+            display: none;
+            position: absolute;
+            background-color: rgb(27, 190, 57);
+        }
+
+        .menulist a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .menulist a:hover{
+            background-color: rgb(34, 193, 198);
+            color: white;
+        }
+
+        .menubar:hover .menu{
+            background-color: rgb(182, 23, 31);
+        }
+
+        .menubar:hover .menulist{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menubar">
+        <button class="menu"> Social Media</button>
+        <div class="menulist">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Tiktok</a>
+
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti, facilis neque quae doloremque quo, quos accusantium cum natus ab incidunt necessitatibus cumque illum similique dolores pariatur? Non, blanditiis beatae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti, facilis neque quae doloremque quo, quos accusantium cum natus ab incidunt necessitatibus cumque illum similique dolores pariatur? Non, blanditiis beatae?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corrupti, facilis neque quae doloremque quo, quos accusantium cum natus ab incidunt necessitatibus cumque illum similique dolores pariatur? Non, blanditiis beatae?</p>
+    
+</body>
+</html>
