@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table, tr, th, td {
+            border-style: solid;
+            border-width: 2px;
+            margin: 0px;
+            padding: 0px;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: lightblue;
+        }
+
+        .ganjil {
+            background-color: lightgreen;
+        }
+
+        .genap {
+            background-color: rgb(178, 240, 181);
+        }
+
+        table {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="ganjil">
+                <td>1</td>
+                <td>Andi</td>
+                <td>Jakarta</td>
+            </tr>
+            <tr class="genap">
+                <td>2</td>
+                <td>Budi</td>
+                <td>Bandung</td>
+            </tr>
+            <tr class="ganjil">
+                <td>3</td>
+                <td>Caca</td>
+                <td>Surabaya</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
