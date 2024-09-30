@@ -1,0 +1,57 @@
+<script>
+    function tampilkanAngka(angka) {
+        if (angka === 1) {
+            return;
+        }
+        document.writeln(angka + "<br>");
+        return tampilkanAngka(angka - 1);
+    }
+
+    tampilkanAngka(10);
+
+    function sayNamaKita(nama, sayNama) {
+        document.writeln("Nama saya adalah " + nama + "<br>" + "saynama :" + sayNama + "<br>");
+    }
+
+    const namaKita = {
+        1 : {
+            nama: "Rizky",
+            sayNama: "sayNamaA"
+        },
+        2 : {
+            nama: "Fadil",
+            sayNama: "sayNamaV"
+        },
+        3 : {
+            nama: "Rizal",
+            sayNama: "sayNamaD"
+        }
+    };
+
+    for (const key in namaKita) {
+        const nama = namaKita[key].nama;
+        const sayNama = namaKita[key].sayNama;
+
+        sayNamaKita(nama, sayNama);
+    }
+
+    function finalScore (nilai) {
+        if (nilai >= 90) {
+            return "A";
+        } else if (nilai >= 80) {
+            return "B";
+        } else if (nilai >= 70) {
+            return "C";
+        } else if (nilai >= 60) {
+            return "D";
+        } else {
+            return "E";
+        }
+    }
+
+    const nilai = [90, 80, 70, 60, 50, 40, 30, 20, 10];
+
+    for (let i of nilai) {
+        document.writeln("Nilai : " + i + " = " + finalScore(i) + "<br>");
+    }
+</script>

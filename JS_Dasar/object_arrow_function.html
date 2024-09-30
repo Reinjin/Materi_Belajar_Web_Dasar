@@ -1,0 +1,23 @@
+<script>
+    const person = {
+        name: "John Doe",
+        age: 25,
+        isMarried: false,
+
+        //tidak akan bisa akses this.name
+        sayHello: (name) => {
+            document.writeln(`Hello ${this.name} dan ini parameter ${name}`);
+        },
+
+        //bisa akses this.name
+        sayHellos : function(name){
+            document.writeln(`Hello ${this.name} dan ini parameter ${name}`);
+        },
+    };
+
+    person.sayHello("Farhan");
+    document.writeln("<br>");    
+    person.sayHellos("wAhid");
+
+
+</script>

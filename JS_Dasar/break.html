@@ -1,0 +1,28 @@
+<script>
+
+    //break digunakan untuk menghentikan perulangan
+    let nilai = 0;
+
+    while (nilai < 10) {
+        document.writeln(nilai + "<br>");
+        nilai++;
+
+
+        if (nilai == 5) {
+            break;
+        }
+    }
+
+    //continue digunakan untuk melanjutkan perulangan tetapi masih menjalankan post statement
+    document.writeln("<br>");
+    document.writeln("continue <br>");
+
+    for (let nilai = 0; nilai < 10; nilai++) {
+
+        if (nilai % 2 == 0) {
+            continue;
+        }
+
+        document.writeln("ganjil : " + nilai + "<br>");
+    }
+</script>

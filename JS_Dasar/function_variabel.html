@@ -1,0 +1,49 @@
+<script>
+    function sayHellooo(nama){
+        document.writeln("Hellooo " + nama);
+    };
+
+    const sayH = sayHellooo;
+
+    sayH("kawan");
+    document.writeln("<br>");
+
+    //memasukkan function ke dalam function
+    function giveMeName(callback){
+        callback("Ris");
+    }
+
+    giveMeName(sayHellooo);
+    giveMeName(sayH);
+
+
+    //anonymous function yang dimasukkan ke dalam variabel
+    let say = function(nama){
+        document.writeln("Hellooo " + nama);
+    }
+
+    say("Ris");
+
+
+    //anonymous function di parameter
+
+    giveMeName(say)
+
+    giveMeName(function(nama){
+        document.writeln("Hellooo " + nama);
+    });
+
+
+    function outer(){
+        let nama = "Ris";
+
+        function inner(){
+            document.writeln("<br>");
+            document.writeln(nama);
+        }
+        inner();
+        inner();
+    }
+    outer();
+
+</script>

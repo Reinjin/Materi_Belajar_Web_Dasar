@@ -1,0 +1,17 @@
+<script>
+    let obj = {
+        name: "John",
+        age: 20,
+        address: {
+            city: "Jakarta",
+            country: "Indonesia"
+        }
+    };
+
+    //jika obj.address tidak ada maka hasil akan bernilai undefined
+    let city = obj?.address?.city;
+    let province = obj?.address?.province;
+
+    document.writeln(city + "<br>");
+    document.writeln(province);
+</script>

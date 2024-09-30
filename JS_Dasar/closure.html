@@ -1,0 +1,19 @@
+<script>
+    function createAdder(value) {
+        const nama = "Ris";
+        function add(param) {
+            console.log(nama);
+
+            console.log("ini value : " + value);
+            console.log("ini param : " + param);
+            return value + param;
+        }
+
+        return add;
+    }
+
+    const addTen = createAdder(2); //akan mengembalikan function add
+    console.log(addTen(5));
+    console.log(addTen(10));
+
+</script>

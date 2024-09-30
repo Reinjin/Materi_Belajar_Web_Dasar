@@ -1,0 +1,22 @@
+<script>
+    const obj = {
+        nama: "Rizky",
+        umur: 20,
+        alamat: "Jl. Jendral Sudirman",
+        sayHello: function(){
+            document.writeln("Hello " + this.nama + "<br>");
+            document.writeln("Umur " + this.umur + "<br>");
+            document.writeln("Alamat " + this.alamat + "<br>");
+        }
+    }
+
+    obj.sayHello();
+
+    obj.sayHellos = function(){
+        document.writeln("Hello " + this.nama + "<br>");
+        document.writeln("Umur " + this.umur + "<br>");
+        document.writeln("Alamat " + this.alamat + "<br>");
+    }
+
+    obj.sayHellos();
+</script>

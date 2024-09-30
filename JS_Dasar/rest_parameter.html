@@ -1,0 +1,30 @@
+<script>
+    function jumlahkan(nama, ...angka) {
+        let total = 0;
+        for (const a of angka) {
+            total += a;
+        }
+        return document.writeln(`Total ${nama} adalah ${total}`);
+    }
+
+
+    jumlahkan("Andi", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    document.writeln("<br>");
+    
+    const nilai = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    jumlahkan("Andi", ...nilai);
+    document.writeln("<br>");
+    jumlahkan("Andi", nilai);
+    
+    //arguments tidak disaarankan
+    document.writeln("<br>");
+    function oldSum(){
+        let total = 0;
+        for (const a of arguments) {
+            total += a;
+        }
+        return document.writeln(`Total adalah ${total}`);
+    }
+
+    oldSum(...nilai);
+</script>

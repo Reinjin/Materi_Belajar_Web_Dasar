@@ -1,0 +1,28 @@
+<script>
+    let saya = {
+        nama: "Fikri",
+        umur: 20,
+        pekerjaan: "Mahasiswa"
+    };
+
+    
+
+    // with statement is not recommended to use in modern JavaScript
+    // because it can cause confusion and make the code harder to read
+    // and understand
+    // and it is not allowed in strict mode
+
+    const nama = "aaa";
+    const umur = 20;
+    const pekerjaan = "Mahasiswa";
+
+
+    with (saya) {
+        //tidak bisa akses nama di line 15, karena ini menjadi tidak direkomendasikan 
+        //untuk menggunakan with statement
+        document.writeln("Nama saya adalah " + nama + "<br>");
+        document.writeln("Umur saya adalah " + umur + "<br>");
+        document.writeln("Pekerjaan saya adalah " + pekerjaan + "<br>");
+    }
+
+</script>

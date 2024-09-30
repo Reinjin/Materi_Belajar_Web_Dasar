@@ -1,0 +1,26 @@
+<script>
+
+    //i global scope
+    let i = 20;
+
+    // i local scope
+    for (let i = 0; i < 10; i++) {
+        document.writeln( "Local : " + i + "<br>");
+    }
+
+    document.writeln( "global : " + i);
+    document.writeln("<br>");
+    document.writeln("<br>");
+
+    //K global scope
+    var K = 20;
+
+    // K local scope
+    for (var K = 0; K < 10; K++) {
+        document.writeln( "Local : " + K + "<br>");
+    }
+
+    document.writeln( "global : " + K); //jadi ambil terusan local scope
+
+
+</script>

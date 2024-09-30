@@ -1,0 +1,70 @@
+<script>
+    const names = ["John", "Doe", "Smith", "Farhan", "Wahid"];
+    const [firstName, lastName, ...rest] = names;
+
+    document.writeln(firstName + "<br>");
+    document.writeln(lastName + "<br>");
+    document.writeln(rest + "<br>");
+
+    document.writeln("<br>");
+
+    const person = {
+        name: "John Doe",
+        age: 25,
+        isMarried: false,
+        address: {
+            city: "Jakarta",
+            country: "Indonesia"
+        },
+        hobbies: ["Swimming", "Reading", "Coding"],
+        parents: {
+            mother: "Maria",
+            father: "John"
+        },
+        kokoro : "Hati",
+        channels : ["Youtube", "Udemy", "Coursera"]
+    };
+
+
+    const { name: namess, age, address, hobbies, parents: { mother, father }, ...otherss} = person;
+
+    document.writeln(namess + "<br>");
+    document.writeln(age + "<br>");
+    document.writeln(address.city + "<br>");
+    document.writeln(hobbies + "<br>");
+    document.writeln(mother + "<br>");
+    document.writeln(father + "<br>");
+    console.table(otherss);
+
+
+    {
+        document.writeln("<br>");
+
+        function display({name, age}) {
+            document.writeln(`Name : ${name} <br>`);
+            document.writeln(`Age : ${age} <br>`);
+
+        }
+
+        const person = {
+            name: "John Doe",
+            age: 25,
+            isMarried: false,
+            address: {
+                city: "Jakarta",
+                country: "Indonesia"
+            },
+            hobbies: ["Swimming", "Reading", "Coding"],
+            parents: {
+                mother: "Maria",
+                father: "John"
+            },
+            kokoro : "Hati",
+            channels : ["Youtube", "Udemy", "Coursera"]
+        };
+
+        display(person);
+
+
+    }
+</script>

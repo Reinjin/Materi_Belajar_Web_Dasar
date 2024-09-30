@@ -1,0 +1,14 @@
+<script>
+    function* createNames() {
+        yield "John";
+        yield "Doe";
+        yield "Smith";
+    }
+
+    const names = createNames();
+    document.writeln("Type dari names : " + typeof names + "<br>");
+    for (let name of names) {
+        let type = typeof name;
+        document.writeln(name + " type nya : " + type + "<br>");
+    }
+</script>

@@ -1,0 +1,24 @@
+<script>
+    const string = "123.44";
+    const number = 123;
+
+    console.log(string + number);
+    console.log(Number(string) + number);
+    console.log(parseInt(string) + number);
+    console.log(parseFloat(string) + number);
+    console.log(string + number.toString());
+    console.log(string + String(number));
+    console.log(string + number + " halo");
+    console.log(string + + +number); 
+
+    //Nan
+    document.write(parseInt("12hello"));
+    document.write(`<p>${parseFloat("1.2hello")} </p>`);
+    document.write(`<p>${Number("1.2hello")} </p>`);
+
+    const NaNa = Number("1.2hello");
+    const total = number + NaNa;
+
+    document.write(`<p>${total} </p>`);
+    document.write(`<p>${isNaN(total)} </p>`);
+</script>

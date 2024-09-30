@@ -1,0 +1,11 @@
+<script>
+    function recursiveExample(angka) {
+        if (angka === 0) {
+            return;
+        }
+        document.writeln(angka + "<br>");
+        return recursiveExample(angka - 1);
+    }
+
+    recursiveExample(10);
+</script>

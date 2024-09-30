@@ -1,0 +1,22 @@
+<script>
+    const obj = {
+        nama: "Rizky",
+        umur: 20,
+        get namaLengkap() {
+            return this.nama + " " + this.umur;
+        },
+
+        set namaLengkap(value) {
+            const array = value.split(" ");
+            this.nama = array[0];
+            this.umur = array[1];
+        }
+    }
+
+    document.writeln(obj.namaLengkap);
+    
+    document.writeln("<br>");
+
+    obj.namaLengkap = "Ris 21";
+    document.writeln(obj.namaLengkap);
+</script>
