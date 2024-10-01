@@ -1,0 +1,87 @@
+<script>
+    class Person{
+        name;
+        age;
+        hobby;
+        job = "retired";
+
+        constructor(name, age, hobby){
+            this.name = name;
+            this.age = age;
+            this.hobby = hobby;
+        }
+
+        sayHello(){
+            document.writeln('<br>');
+            document.writeln('Halo, nama saya ' + this.name + ', umur saya ' + this.age + ' tahun, dan hobi saya adalah ' + this.hobby);
+        }
+    }
+
+    const saya = new Person('Ari', 30, 'Gaming');
+    console.info(saya.job);
+
+
+    class Counter{
+        #count = 0;  // private field
+
+        get getCouter(){
+            return this.#count;
+        }
+
+        increment(){
+            this.#count++;
+        }
+
+        decrement(){
+            this.#count--;
+        }
+    }
+
+    const counter = new Counter();
+    document.writeln('<br>');
+    document.writeln(counter.getCouter);
+
+
+    class Person1{
+        say(name) {
+            if (name) {
+                this.#saywithName(name);
+            }else{
+                this.#sayWithoutName();
+            }
+        }
+
+        #saywithName(name){
+            document.writeln('<br>');
+            document.writeln('Halo, nama saya ' + name);
+        }
+
+        #sayWithoutName(){
+            document.writeln('<br>');
+            document.writeln('Halo, nama saya tidak diketahui');
+        }
+    }
+
+    const person11 = new Person1();
+
+    person11.say();
+
+    class employee extends Person{
+        position;
+
+        constructor(name, age, hobby, position){
+            super(name, age, hobby);
+            this.position = position;
+        }
+
+        sayHello(){
+            document.writeln('<br>');
+            document.writeln('Halo, nama saya ' + this.name + ', umur saya ' + this.age + ' tahun, dan hobi saya adalah ' + this.hobby + ', dan posisi saya adalah ' + this.position);
+        }
+    }
+
+    const saya1 = new employee('Ari', 30, 'Gaming', 'Staff');
+
+    console.info(saya1 instanceof employee);
+    console.info(saya1 instanceof Person);
+</script>

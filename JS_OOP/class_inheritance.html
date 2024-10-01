@@ -1,0 +1,33 @@
+<script>
+    class employee{
+        constructor(name, age, position){
+            this.name = name;
+            this.age = age;
+            this.position = position;
+        }
+
+        sayHello(){
+            document.writeln('<br>');
+            document.writeln('Halo, nama saya ' + this.name + ', umur saya ' + this.age + ' tahun, dan posisi saya adalah ' + this.position);
+        }
+    }
+
+    class Manager extends employee{
+        constructor(name, age, hobby){
+            super(name, age, 'Manager');
+            this.hobby = hobby;
+        }
+
+        sayHello(){
+            super.sayHello();
+            document.writeln('<br>');
+            document.writeln('Halo, nama saya ' + this.name + ', umur saya ' + this.age + ' tahun, dan posisi saya adalah ' + this.position + ', dan hobi saya adalah ' + this.hobby);
+        }
+    }
+
+    const saya = new employee('Ari', 30, 'Staff');
+    const saya2 = new Manager('Ari', 30, 'Gaming');
+
+    saya.sayHello();
+    saya2.sayHello();
+</script>

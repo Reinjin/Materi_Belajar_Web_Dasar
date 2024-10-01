@@ -1,0 +1,24 @@
+<script>
+    function Employee(name) {
+        this.name = name;
+        this.sayHello = function() {
+            document.writeln('Halo, nama saya ' + this.name);
+        }
+    }
+
+    function Manager(name, division) {
+        Employee.call(this, name);
+        this.division = division;
+        this.sayHello = function() {
+            document.writeln('Halo, nama saya ' + this.name + ', saya adalah seorang Manager di divisi ' + this.division);
+        }
+    }
+
+    const ari = new Employee('Ari');
+    console.log(ari);
+
+    const budi = new Manager('Budi', 'Marketing');
+    console.log(budi);
+
+    budi.sayHello();
+</script>

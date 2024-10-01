@@ -1,0 +1,29 @@
+<script>
+    function Person(name, age, hobby) {
+        this.name = name;
+        this.age = age;
+        this.hobby = hobby;
+        this.sayHello = function() {
+            document.writeln('<br>');
+            document.writeln('<br>');
+            document.writeln('Halo, nama saya ' + this.name + ', umur saya ' + this.age + ' tahun, dan hobi saya adalah ' + this.hobby);
+        }
+    }
+
+    Person.prototype.sayBye = function() {
+        document.writeln('<br>');
+        document.writeln('Sampai jumpa, semoga harimu menyenangkan!');
+    }
+
+    const saya = new Person();
+    saya.name = 'Ari';
+    saya.age = 30;
+    saya.hobby = 'Gaming';
+    saya.sayHello();
+
+    const kamu = new Person('Budi', 25, 'Membaca');
+    kamu.sayHello();
+
+    console.log(saya);
+    console.log(kamu);
+</script>

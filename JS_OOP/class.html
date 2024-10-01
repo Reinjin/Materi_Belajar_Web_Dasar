@@ -1,0 +1,17 @@
+<script>
+    class Person{
+        constructor(name, age, hobby){
+            this.name = name;
+            this.age = age;
+            this.hobby = hobby;
+        }
+
+        sayHello(){
+            document.writeln('<br>');
+            document.writeln('Halo, nama saya ' + this.name + ', umur saya ' + this.age + ' tahun, dan hobi saya adalah ' + this.hobby);
+        }
+    }
+
+    const saya = new Person('Ari', 30, 'Gaming');
+    saya.sayHello();
+</script>

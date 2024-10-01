@@ -1,0 +1,51 @@
+<script>
+    class Person{
+        constructor(name, age, hobby){
+            this.name = name;
+            this.age = age;
+            this.hobby = hobby;
+        }
+
+        get personName(){
+            return this.name;
+        }
+
+        set personName(name){
+            this.name = name;
+        }
+
+        get personAge(){
+            return this.age;
+        }
+
+        set personAge(age){
+            this.age = age;
+        }
+
+        get personHobby(){
+            return this.hobby;
+        }
+
+        set personHobby(hobby){
+            this.hobby = hobby;
+        }
+
+        sayHello(){
+            document.writeln('<br>');
+            document.writeln('Halo, nama saya ' + this.name + ', umur saya ' + this.age + ' tahun, dan hobi saya adalah ' + this.hobby);
+        }
+    }
+
+    const saya = new Person('Ari', 30, 'Gaming');
+    saya.sayHello();
+
+    saya.personName = 'Ari Wibowo';
+    saya.personAge = 31;
+    saya.personHobby = 'Coding';
+    saya.sayHello();
+
+    document.writeln('<br>');
+    document.writeln('Nama saya adalah ' + saya.personName);
+    document.writeln('<br>');
+    document.writeln('Umur saya adalah ' + saya.personAge);
+</script>

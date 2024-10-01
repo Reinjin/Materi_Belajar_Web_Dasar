@@ -1,0 +1,57 @@
+<script>
+    class Configuration {
+        static name = 'Belajar Javascript';
+        static version = '1.0';
+        static author = 'Ari Wibowo';
+    }
+
+
+    const config = new Configuration();
+    document.writeln('<br>');
+    console.log(config);
+
+    console.log(Configuration.name);
+
+    class ValidationError extends Error {
+        constructor(message, field) {
+            super(message);
+            this.field = field;
+        }
+    }
+
+
+    //Try Catch Error
+    class MathUtil {
+        static sum(...numbers) {
+            if (numbers.length === 0) {
+                throw new ValidationError('Parameter harus lebih dari 0', 'numbers');
+            }
+
+            return numbers.reduce((prev, current) => prev + current);
+        }
+
+        static multiply(...numbers) {
+            return numbers.reduce((prev, current) => prev * current);
+        }
+
+    }
+
+    try {
+        console.log(MathUtil.sum());
+    } catch (error) {
+        if (error instanceof ValidationError) {
+            console.error(`Terjadi eror di field ${error.field}, dengan pesan: ${error.message}`);
+        } else {
+            console.error(`Terjadi error: ${error.message}`);
+        }
+    } finally {
+        console.log('Program selesai');
+    }
+
+    console.info(MathUtil.sum(1, 2, 3, 4, 5));
+
+
+
+
+
+</script>
