@@ -1,0 +1,24 @@
+<script>
+    //encode uri dan decode uri
+
+    const url = "https://www.google.com/?name=John Doe&age=30";
+    console.info(url);
+
+    const encodedUrl = encodeURI(url);
+    console.info(encodedUrl);
+
+    const decodedUrl = decodeURI(encodedUrl);
+    console.info(decodedUrl);
+
+
+
+    const value = "John Doe&umur=30";
+    const url2 = "https://www.google.com/?name=";
+    console.info(url2 + value);
+
+    const encodedValue = encodeURIComponent(value);
+    console.info(url2 + encodedValue);
+
+    const decodedValue = decodeURIComponent(encodedValue);
+    console.info(url2 + decodedValue);
+</script>

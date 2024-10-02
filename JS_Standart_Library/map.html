@@ -1,0 +1,31 @@
+<script>
+    const map = new Map();
+    map.set('name', 'John');
+    map.set('age', 30);
+
+    console.log(map);
+
+    console.log(map.get('name'));
+    console.log(map.get('age'));
+
+
+    map.forEach((value, key) => console.log(`${key}: ${value}`));
+
+    const set = new Set();
+
+    set.add('John');
+    set.add('Jane');
+    set.add('John');
+
+    console.log(set);
+
+
+    const firstName = Symbol("ini nama first name");
+    const firstName2 = Symbol("ini nama first name");
+
+    const person = {};
+    person[firstName] = 'John';
+    person[firstName2] = 'Jane';
+
+    console.log(person);
+</script>

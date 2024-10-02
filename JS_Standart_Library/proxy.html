@@ -1,0 +1,26 @@
+<script>
+
+    const target = {}
+
+    const handler = {
+        get: function (target, prop) {
+            console.log("Get property: " + prop);
+            return target[prop];
+        },
+        set: function (target, prop, value) {
+            if (value == null ) {
+                target[prop] = "";
+            }else{
+                console.log("Set property: " + prop + " with value: " + value);
+                target[prop] = value;
+            }
+            
+        }
+    }
+
+    const proxy = new Proxy(target, handler);
+
+    proxy.name = 'John';
+    console.log(proxy.name);
+    console.log(target);
+</script>

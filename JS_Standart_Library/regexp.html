@@ -1,0 +1,34 @@
+<script>
+    //create regex
+
+    const regex1 = /hello/;
+    const regex2 = new RegExp("hello");
+    const regex3 = new RegExp(/hello/);
+
+
+    //test regex
+    const name = "fawwaz ijlal muqsith"
+    const regex = /fawwaz/;
+
+    const result = regex.exec(name);
+    console.log(result);
+
+    const result2 = regex.test(name);
+    console.log(result2);
+
+
+    //regex modifier
+
+    const nama1 = "Fawwaz ij fawwaz ijlal muqsith fawwaz";
+    const regex4 = /^fawwaz/igm;
+    const regex5 = /fawwaz/gi;
+
+    let result3;
+    while ((result3 = regex4.exec(nama1)) !== null) {
+        console.log(result3);
+    }
+    while ((result3 = regex5.exec(nama1)) !== null) {
+        console.log(result3);
+    }
+
+</script>

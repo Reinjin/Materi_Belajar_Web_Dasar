@@ -1,0 +1,21 @@
+<script>
+
+    const person = {
+        firstName: 'Fawwaz',
+        lastName: 'Ijlal',
+        hobbies: ['Membaca', 'Menulis', 'Menggambar'],
+        address: {
+            street: 'Jl. Setiabudi',
+            city: 'Bandung',
+            country: 'Indonesia'
+        }
+
+    }
+
+    const json = JSON.stringify(person);
+    console.info(json);
+
+    const object = JSON.parse(json);    
+    console.info(object);
+
+</script>

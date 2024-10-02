@@ -1,0 +1,60 @@
+<script>
+
+    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    array.forEach((value, index) => {
+        console.info(`Index ke-${index} adalah ${value}`);
+    });
+
+    array.forEach((value, index) => console.info(`Index ke-${index} adalah ${value}`));
+
+    const queue = [];
+
+    queue.push(1);
+    queue.push(2);
+    queue.push(3);
+
+    console.info(queue.shift());
+    console.info(queue.shift());
+    console.info(queue.shift());
+    console.info(queue.shift());
+
+    const stack = [];
+
+    stack.push(1);
+    stack.push(2);
+    stack.push(3);
+
+    console.info(stack.pop());
+    console.info(stack.pop());
+    console.info(stack.pop());
+    console.info(stack.pop());
+
+    const source_to_search = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,,34,34,34,34,34,525256,356,3,62356,34];
+
+    console.info(source_to_search.find(value => value > 5));
+    console.info(source_to_search.findIndex(value => value > 5));
+    console.info(source_to_search.filter(value => value > 5));
+    console.info(source_to_search.lastIndexOf(5));
+
+    //array filter
+
+    const array_filter = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const ganjil = array_filter.filter(value => value % 2 === 1);
+    const genap = array_filter.filter(value => value % 2 === 0);
+    console.info(ganjil);
+    console.info(genap);
+
+    //array transform
+
+    const array_transform = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const array_map_pangkat = array_transform.map(value => value * 2);
+
+    console.info(array_map_pangkat);
+
+    //array reduce
+    const array_reduce = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const total = array_reduce.reduce((prev, current) => prev + current, 0);
+    console.info(total);
+    
+</script>

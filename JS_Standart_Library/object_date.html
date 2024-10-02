@@ -1,0 +1,36 @@
+<script>    
+
+    const date = new Date();
+    console.log(date);
+
+    const date1 = new Date('2020-01-01');
+    console.log(date1);
+
+    const date2 = new Date(2020, 2, 1, 20, 10, 30);
+    console.log(date2);
+
+    const date3 = new Date(1656780000000);
+    console.log(date3);
+
+    console.log(date2.getTime());
+
+    const time = Date.parse('2020-01-01T00:00:00');
+    console.log(time);
+
+    const date4 = new Date(time);
+    console.log(date4);
+
+
+    console.log(date.getFullYear());
+    console.log(date.getMonth());
+    console.log(date.getDate());
+    console.log(date.getDay());
+    console.log(date.getHours());
+    console.log(date.getMinutes());
+    console.log(date.getSeconds());
+    console.log(date.getMilliseconds());
+    console.log(date.getTimezoneOffset());
+
+
+    
+</script>
