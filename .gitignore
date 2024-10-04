@@ -1,3 +1,9 @@
 *.png
 *.mkv
 *.mp3
+
+/node_modules
+
+eslint.config.mjs
+package-lock.json
+package.json
