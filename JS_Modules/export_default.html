@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="scripts/export_default.js">
+    </script>
+
+</head>
+<body>
+
+    <script type="module">
+
+        import Aaa, {default as Aaaa, title} from './scripts/export_default.js';
+        
+        Aaa("halo kawan");
+        Aaaa("halo kawan baru");
+        console.log(title);
+
+    </script>
+    
+</body>
+</html>

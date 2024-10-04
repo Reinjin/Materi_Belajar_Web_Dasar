@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="scripts/variable.js"></script>
+    <script type="module" src="scripts/variable1.js"> </script>
+</head>
+<body>
+
+<script type="module">
+    import {name} from './scripts/variable.js';
+    import {name as name1} from './scripts/variable1.js';
+
+    console.log(name)
+    console.log(name1)
+
+</script>    
+</body>
+</html>
