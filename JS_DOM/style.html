@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <input type="button" value="red">
+        <input type="button" value="green">
+        <input type="button" value="blue">
+        <div id="canvas" style="width: 500px; height: 500px; background-color: aqua;"></div>
+    </body>
+
+    <script>
+
+        const canvas = document.getElementById("canvas");
+        const buttons = document.querySelectorAll("input[type='button']");
+
+        for (let button of buttons) {
+            button.addEventListener("click", function() {
+                canvas.style.backgroundColor = button.value;
+            });
+        }
+    </script>
+</html>

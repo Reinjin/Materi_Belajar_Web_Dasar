@@ -1,0 +1,21 @@
+
+<html>
+    <body>
+        
+        <h1 id="text"> click green box</h1>
+        <div id="canvas" style="width: 500px; height: 500px; background-color: greenyellow;"></div>
+    </body>
+
+    <script>
+        const canvas = document.getElementById("canvas");
+        const text = document.getElementById("text");
+
+        //event adalah parameter yang akan menangkap event yang terjadi dalam 
+        //kasus ini adalah event click pada mousenya
+
+        canvas.onclick = function(event) {  
+            text.textContent = `kamu memencet pada posisi x: ${event.x}, y: ${event.y}`;
+        }
+        
+    </script>
+</html>

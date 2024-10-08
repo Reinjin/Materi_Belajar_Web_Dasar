@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <input id="input" type="button" value="Click ME!">
+    </body>
+
+    <script>
+        const input = document.getElementById("input");
+
+        input.addEventListener("click", function() {
+            input.setAttribute("value", "Kamu telah memesan!"); 
+        });
+
+        input.addEventListener("click", function() {
+            console.log("Tombol sudah diklik!");
+        });
+
+        input.onclick = function() {
+            console.log("Tombol sudah diklik! pada saaat onclick");
+        }
+
+
+    </script>
+</html>

@@ -1,0 +1,16 @@
+<html>
+
+<body>
+    
+    <img id="logo" src="Kokkurisan.png" alt="Kokkurisan Logo" >
+
+    <script>
+        const logo = document.getElementById("logo");
+        const attributes = logo.attributes;
+
+        for ( let attribute of attributes) {
+            console.log(`${attribute.name} : ${attribute.value}`);
+        }
+    </script>
+</body>
+</html>

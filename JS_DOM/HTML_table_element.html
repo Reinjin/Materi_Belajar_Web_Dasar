@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table id="orderRevenue" border="1">
+        <caption>ORDER</caption>
+
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Revenue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1_id</td>
+                <td>10003434</td>
+            </tr>
+            <tr>
+                <td>2_id</td>
+                <td>10003434</td>
+            </tr>
+            <tr>
+                <td>
+                    3_id
+                </td>
+                <td>10003434</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>30010302</td>
+            </tr>
+            <tr>
+                <td colspan="2">Thank you for shopping with us</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        const table = document.getElementById('orderRevenue');
+        console.log(table.caption);
+        console.log(table.tHead);
+        console.log(table.tBodies);
+        console.log(table.tFoot);
+        console.log(table.rows);
+    </script>
+    
+    
+</body>
+</html>

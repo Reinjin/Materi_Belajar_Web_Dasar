@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <p id="content">
+            <script>console.info("hello") </script>
+            <b>Fawwaz</b> Ijlal <i>Muqsith</i>
+        </p>
+
+        <h1 id="content2">
+
+        </h1>
+    </body>
+
+    <script>
+        const content = document.getElementById("content");
+        console.log(`inner text : ${content.innerText}`);   //inner text hanya ambil textnya
+        console.log(content.textContent); //textContent ambil semua textnya
+        console.log(content.innerHTML); //innerHTML ambil semua textnya beserta tag htmlnya
+
+        const content2 = document.getElementById("content2");
+        content2.innerHTML = "<b>hello kawan iini dibuat menggunakan inner HTML</b>";
+
+
+    </script>
+</html>

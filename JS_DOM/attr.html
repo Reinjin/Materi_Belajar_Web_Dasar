@@ -1,0 +1,20 @@
+<html>
+    <body>
+        
+        <img id="logo" src="Kokkurisan.png" alt="Kokkurisan Logo" >
+    </body>
+
+    <script>
+        const logo = document.getElementById("logo");
+        const src = logo.getAttributeNode("src");
+
+        console.log(src.name);
+        console.log(src.value);
+
+        const src2 = logo.getAttribute("src");
+        console.log(src2);
+
+        
+
+    </script>
+</html>

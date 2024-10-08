@@ -1,0 +1,29 @@
+<html>
+    <body>
+        
+        <ul id="menu1">
+            <li id="first">first</li>
+            <li id="second">second</li>
+            <li id="third">tird</li>
+        </ul>
+        <ul id="menu2">
+            <li id="aaa">first</li>
+            <li id="ssss">second</li>
+            <li id="dddd">tird</li>
+        </ul>
+    </body>
+    <script>
+
+        const list = document.querySelectorAll("li");  //akan static tetap nilainya
+
+        const menu1 = document.getElementById("menu1");
+        
+        menu1.appendChild(document.createElement("li"));
+        menu1.appendChild(document.createElement("li"));
+
+        console.log(list);
+
+        
+
+    </script>
+</html>

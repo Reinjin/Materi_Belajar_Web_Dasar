@@ -1,0 +1,23 @@
+<html>
+    <ul id="menu">
+        <li id="first"> first </li>
+        <li id="second"> second </li>
+        <li id="third"> third </li>
+    </ul>
+
+    <script>
+        const menu = document.getElementById("menu");
+        console.log(menu);
+        console.log(menu.children);
+        console.log(menu.childNodes)    
+
+        menu.removeChild(document.getElementById("second"));
+
+        const first = document.getElementById("first");
+        console.log(first);
+
+
+
+        
+    </script>
+</html>
