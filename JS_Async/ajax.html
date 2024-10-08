@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+
+    AJAX
+
+    <h1 id="response1"> A</h1>
+
+    <script>
+        function request(){
+            const ajax = new XMLHttpRequest();
+            ajax.open("GET", "api/hello.json");
+            ajax.addEventListener("load", function(){
+                const response = JSON.parse(ajax.responseText);
+                const header = document.getElementById('response1');
+                header.textContent = response.message;
+            });
+            ajax.send();
+        }
+
+        setTimeout(request, 2000);
+    
+    </script>
+    
+</body>
+</html>
+

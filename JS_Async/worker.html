@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="buttonTask"> CLick</button>
+
+    <script>
+        // function showLog(total){
+        //     for (let i = 0; i < total; i++) {
+        //         console.log(i);
+        //     }
+        // }
+
+        const worker = new Worker('worker.js');
+
+        worker.addEventListener('message', function(event){
+            console.log(event.data);
+        });
+
+        document.getElementById('buttonTask').onclick = function(){
+            // console.info("Task Started");
+            // showLog(2002);
+            // console.info("Task Ended");
+            worker.postMessage(1000);
+        }
+
+    </script>
+    
+</body>
+</html>

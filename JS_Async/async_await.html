@@ -1,0 +1,28 @@
+<script>
+
+    function getProduct(){
+        const request = new Request("api/product.json", {
+            method : "GET",  
+        })
+
+        const response = fetch(request);
+
+        return response.then(response => response.json());
+    }
+
+    async function getProductNameAsync(){
+        try{
+            const product = await getProduct();
+            return product.name;
+        }catch(error){
+            return "Product Not Found"
+        }
+    }
+
+    getProductNameAsync()
+        // .then(function(name){
+        //     console.log(name);
+        // })
+        .then((name) => console.log(name))
+
+</script>

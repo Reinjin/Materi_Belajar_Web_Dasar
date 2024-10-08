@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Set Timeout</title>
+    </head>
+    <body>
+        <h1 id="h1"></h1>
+    </body>
+</html>
+
+<script>
+    function addElement(){
+        const header = document.createElement('H1');
+        header.innerHTML = "Hello World";
+
+        document.body.appendChild(header);
+    }
+
+    setTimeout(addElement, 2000);
+
+
+    function setTime(){
+        const header = document.getElementById('h1');
+        header.textContent = new Date().toString();
+
+    }
+
+    setInterval(setTime, 1000);
+</script>
